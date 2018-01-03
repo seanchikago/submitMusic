@@ -11,15 +11,19 @@ require ("db.php");
   
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="logo.png" type=" image/png" sizes="16x16">
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> master
   
 </head>
 
 <body>
   <!DOCTYPE html>
 <head>
+<<<<<<< HEAD
   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>                      -->
   <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>-->
   <link href='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
@@ -31,6 +35,17 @@ require ("db.php");
   <script src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js' type='text/javascript'></script>
   <script src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/js/bootstrap-switch.min.js' type='text/javascript'></script>
   <script src='https://davidstutz.github.io/bootstrap-multiselect/js/bootstrap-multiselect.js' type='text/javascript'></script>  -->
+=======
+  <link href='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <link href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css' rel='stylesheet' type='text/css'>
+  <link href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/css/bootstrap-switch.css' rel='stylesheet' type='text/css'>
+  <link href='https://davidstutz.github.io/bootstrap-multiselect/css/bootstrap-multiselect.css' rel='stylesheet' type='text/css'>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js' type='text/javascript'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js' type='text/javascript'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js' type='text/javascript'></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/js/bootstrap-switch.min.js' type='text/javascript'></script>
+  <script src='https://davidstutz.github.io/bootstrap-multiselect/js/bootstrap-multiselect.js' type='text/javascript'></script>
+>>>>>>> master
   
     <script>
 
@@ -60,6 +75,7 @@ require ("db.php");
 
 </script>
 
+<<<<<<< HEAD
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>     -->
 <!--<script>
 $( document ).ready(function() {
@@ -119,6 +135,8 @@ function check_username_ajax(username){
 });
 </script>
 
+=======
+>>>>>>> master
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-17492014-20"></script>
 <script>
@@ -363,12 +381,20 @@ function check_username_ajax(username){
                 <!--<iframe id="upload_frame" name="upload_frame" frameborder="0" border="0" src="" scrolling="no" scrollbar="no" > </iframe>-->
               
 		    <div class='form-group' style="text-align: center !important;">
+<<<<<<< HEAD
             <label class='control-label col-md-8 col-md-offset-2' for='id_title'>Send K5000.00 to 0996718793 or 0880649615 and type below the number that sent the money.</label>
                      <br/>
                      <div class='col-md-3 col-md-offset-4'>
                      
                     <input class='form-control' size="35" id='payphone' placeholder='Phone Number...' type='tel' name='payphone' required>
                     <span style="clear:both; float: left;" id="user-result"></span>
+=======
+            <label class='control-label col-md-8 col-md-offset-2' for='id_title'>Send K5000.00 to 0996718793 (Airtel Money) or 0880649615 (TNM Mpamba) and type below the number that sent the money.</label>
+                     <br/>
+                     <div class='col-md-3 col-md-offset-4'>
+                     
+                    <input class='form-control' size="35" id='producer' placeholder='Phone Number...' type='tel' name='payphone' required>
+>>>>>>> master
                     
                     </div>
              
@@ -454,8 +480,13 @@ function check_username_ajax(username){
 						
 						if (!empty($artist_name) && !empty($song_name) && !empty($release_date)){
 							
+<<<<<<< HEAD
 							$query = "INSERT INTO newMusic (artist_name,song_name,producer,song_pic,status,DateAdded,genre,release_date,phone, song_file, payphone)
 									 VALUES ('$artist_name','$song_name','$producer ','$photoname','1',now(),'$genre','$release_date','$phone','$song_filename', '$payphone')";
+=======
+							$query = "INSERT INTO newMusic (artist_name,song_name,producer,song_pic,status,DateAdded,genre,release_date,phone, song_file, payphone, bio)
+									 VALUES ('$artist_name','$song_name','$producer ','$photoname','1',now(),'$genre','$release_date','$phone','$song_filename', '$payphone', '$biography')";
+>>>>>>> master
 									 
 							
 							if (move_uploaded_file($_FILES["photo"]["tmp_name"],$image_file) && move_uploaded_file($_FILES["song_filename"]["tmp_name"],$song_file)) {
@@ -520,8 +551,11 @@ function check_username_ajax(username){
 
     <script  src="js/index.js"></script>
 
+<<<<<<< HEAD
    
 
+=======
+>>>>>>> master
 </body>
 </html>
 
